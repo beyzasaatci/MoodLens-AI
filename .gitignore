@@ -1,0 +1,9 @@
+backend/node_modules/
+message-service/node_modules/
+frontend/node_modules/
+node_modules/
+docker-compose.yml
+backend/DockerFile
+message-service/DockerFile
+.DS_Store
+.env
