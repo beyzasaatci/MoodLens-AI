@@ -10,3 +10,4 @@ message-service/DockerFile
 *.pyc
 *.csv
 DockerFile
+*.pt
