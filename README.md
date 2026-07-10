@@ -97,29 +97,6 @@ Qwen generates a natural AI response based on the user's emotional state.
 
 The analysis result and AI response are displayed on the web interface.
 
----
-greeting-app
-
-├── frontend
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
-├── backend
-│   └── server.js
-│
-└── ai-service
-├── app.py
-├── Dockerfile
-├── requirements.txt
-│
-├── model
-│   └── emotion_model.pt
-│
-└── training
-├── train.py
-├── dataset.py
-└── predict.py
 
 # 🎯 Project Goal
 
