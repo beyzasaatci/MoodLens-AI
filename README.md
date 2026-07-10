@@ -1,77 +1,143 @@
-🦢 Neyse Halin Çıksın Moodun
+ MOODLEND-AI  🦢 Neyse Halin Çıksın Moodun
 
-📌 Proje Hakkında
+## 📌 About The Project
 
-Neyse Halin Çıksın Moodun, kullanıcıların yazılı ifadelerinden duygularını analiz eden ve yapay zeka destekli sohbet ile kullanıcıya kişisel yanıtlar sunan bir duygu analiz uygulamasıdır.
+**Neyse Halin Çıksın Moodun** is an AI-powered emotion analysis and conversational assistant application that analyzes users' written expressions and provides personalized responses through artificial intelligence.
 
-Proje içerisinde BERT tabanlı bir duygu sınıflandırma modeli kullanılarak kullanıcının metni analiz edilir. Ardından Qwen büyük dil modeli kullanılarak algılanan duyguya uygun, doğal ve empatik AI yanıtları oluşturulur.
+The project uses a **BERT-based emotion classification model** to analyze users' texts and detect their emotional states. Then, the **Qwen Large Language Model (LLM)** generates natural, empathetic, and context-aware AI responses based on the detected emotion.
 
----
-
-🚀 Özellikler
-
-- 🧠 BERT ile duygu sınıflandırma
-- 📊 Duygu güven oranı hesaplama
-- 🎯 En güçlü 3 duygu analizi
-- 🤖 Qwen AI ile doğal sohbet
-- 💬 Kullanıcı ile karşılıklı konuşma
-- 🌐 Web tabanlı kullanıcı arayüzü
-- ⚡ FastAPI backend desteği
+The application combines traditional emotion classification with modern large language models to create a more interactive and human-like user experience.
 
 ---
 
-🛠 Kullanılan Teknolojiler
+# 🚀 Features
 
- Backend
+- 🧠 Emotion classification with BERT
+- 📊 Emotion confidence score calculation
+- 🎯 Top 3 strongest emotion analysis
+- 🤖 Natural conversations with Qwen AI
+- 💬 Interactive AI chat experience
+- 🌐 Web-based user interface
+- ⚡ FastAPI backend support
+- 🐳 Docker support
+
+---
+
+# 🛠 Technologies Used
+
+## Backend
+
 - Python
 - FastAPI
 - PyTorch
-- Transformers
+- Hugging Face Transformers
 - Ollama
-- Qwen3:1.7B
-- 
- Docker Desteği
 
-AI servisi Docker kullanılarak container haline getirilmiştir.
+## AI Models
 
-Docker sayesinde:
-- Gerekli bağımlılıklar otomatik yönetilir.
-- Proje farklı ortamlarda kolayca çalıştırılabilir.
-- AI backend servisi izole şekilde çalışır.
+### BERT
 
-AI Modelleri
-- BERT (Türkçe duygu sınıflandırma)
-- Qwen LLM (AI sohbet)
+- Used for Turkish text emotion classification.
+- Analyzes user input and predicts emotional categories.
 
-Frontend
+### Qwen3:1.7B
+
+- Used as a Large Language Model (LLM).
+- Generates natural and empathetic responses.
+- Provides AI-powered conversation capabilities.
+
+## Frontend
+
 - HTML
 - CSS
 - JavaScript
 
+## Deployment
+
+- Docker
+- Git / GitHub
 ---
 
-🔄 Çalışma Mantığı
+# 🐳 Docker Support
 
-Kullanıcı bir metin girer.
+The AI service is containerized using Docker to provide an easier and more consistent development environment.
 
-⬇️
+Docker helps:
 
-BERT modeli metni analiz eder.
-
-⬇️
-
-Ana duygu ve güven oranı belirlenir.
-
-⬇️
-
-Qwen modeli duygu bilgisine göre doğal bir AI yanıtı üretir.
-
-⬇️
-
-Sonuç kullanıcıya web arayüzünde gösterilir.
+- Manage dependencies automatically.
+- Run the AI service in an isolated environment.
+- Make the project easier to deploy on different systems.
 
 ---
 
-🎯 Amaç
+# 📁 Project Structure
+---
 
-Bu projenin amacı, kullanıcıların duygu durumlarını yazılı ifadeler üzerinden anlamlandırabilen ve onlarla doğal bir şekilde iletişim kurabilen yapay zeka destekli bir sistem geliştirmektir.
+# 🔄 How It Works
+
+The user enters a text message.
+
+⬇️
+
+The BERT model analyzes the text.
+
+⬇️
+
+The main emotion and confidence score are calculated.
+
+⬇️
+
+The detected emotion is sent to the Qwen model.
+
+⬇️
+
+Qwen generates a natural AI response based on the user's emotional state.
+
+⬇️
+
+The analysis result and AI response are displayed on the web interface.
+
+---
+greeting-app
+
+├── frontend
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── backend
+│   └── server.js
+│
+└── ai-service
+├── app.py
+├── Dockerfile
+├── requirements.txt
+│
+├── model
+│   └── emotion_model.pt
+│
+└── training
+├── train.py
+├── dataset.py
+└── predict.py
+
+# 🎯 Project Goal
+
+The goal of this project is to develop an AI-powered system that can understand users' emotional states from written expressions and communicate with them naturally.
+
+By combining BERT-based emotion classification with Qwen's language generation capabilities, the project provides a more interactive and personalized AI experience.
+# 🚀 Future Improvements
+
+- Deploy the application on AWS cloud services.
+
+- Store user conversation history.
+
+- Add AI memory for personalized conversations.
+
+- Implement voice-based interaction.
+
+- Develop a mobile application.
+
+- Improve emotion detection accuracy with larger datasets.
+
+- Support multiple languages.
