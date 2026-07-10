@@ -29,6 +29,15 @@ Proje içerisinde BERT tabanlı bir duygu sınıflandırma modeli kullanılarak 
 - Transformers
 - Ollama
 - Qwen3:1.7B
+- 
+ Docker Desteği
+
+AI servisi Docker kullanılarak container haline getirilmiştir.
+
+Docker sayesinde:
+- Gerekli bağımlılıklar otomatik yönetilir.
+- Proje farklı ortamlarda kolayca çalıştırılabilir.
+- AI backend servisi izole şekilde çalışır.
 
 AI Modelleri
 - BERT (Türkçe duygu sınıflandırma)
