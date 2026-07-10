@@ -7,3 +7,6 @@ backend/DockerFile
 message-service/DockerFile
 .DS_Store
 .env
+*.pyc
+*.csv
+DockerFile

@@ -1,30 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Greeting App</title>
+
+    <title>MoodLens AI</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <div class="container">
-    <h1>Greeting App</h1>
 
-    <input
-        type="text"
-        id="name"
-        placeholder="Your Name"
-    >
+    <h1>⋆.˚🦢⋆ NEYSE HALİN ÇIKSIN MOODUN ૮₍ ˶ᵔ ᵕ ᵔ˶ ₎ა</h1>
 
-    <button onclick="sayHello()">
-        Say Hello
+    <p class="subtitle">
+        Bugün nasıl geçti günün?
+    </p>
+
+    <!-- Greeting Service -->
+
+    <div class="card">
+
+        <h2>👋 Greeting</h2>
+
+        <input
+            type="text"
+            id="name"
+            placeholder="Adını yaz..."
+        >
+
+        <button onclick="sayHello()">
+            Merhaba De
+        </button>
+
+        <p id="helloResult"></p>
+
+    </div>
+<div id="ai-box" class="hidden">
+    <h3>🤖 AI Yorumu</h3>
+    <p id="ai-response"></p>
+</div>
+    <!-- AI Emotion Analysis -->
+
+    <div class="card">
+
+        <h2>🤖 AI Emotion Analysis</h2>
+
+        <textarea
+            id="emotionText"
+            placeholder="Bugün nasıl hissediyorsun?"
+        ></textarea>
+
+        <button id="analyzeBtn">
+            🔍 Analiz Et
+        </button>
+
+        <div id="emotionResult"></div>
+<button id="chatBtn">
+    💬 Sohbet Et
+</button>
+
+<div id="chatBox" class="hidden">
+
+    <div id="chatMessages"></div>
+
+    <textarea 
+        id="chatInput"
+        placeholder="Mesajını yaz..."
+    ></textarea>
+
+    <button id="sendChatBtn">
+        Gönder
     </button>
 
-    <p id="result"></p>
+</div>
+    </div>
+
 </div>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
